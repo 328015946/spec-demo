@@ -8,6 +8,7 @@ import { RouterLink, RouterView } from 'vue-router'
       <router-link to="/" class="logo">VueApp</router-link>
       <nav class="nav-links">
         <router-link to="/" class="nav-item">Home</router-link>
+        <router-link to="/about" class="nav-item">About</router-link>
         <router-link to="/login" class="nav-item">Login</router-link>
         <router-link to="/register" class="btn btn-primary btn-sm">Sign Up</router-link>
       </nav>
@@ -69,11 +70,5 @@ import { RouterLink, RouterView } from 'vue-router'
   flex: 1;
   display: flex;
   flex-direction: column;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
 }
 </style>
