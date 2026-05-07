@@ -69,3 +69,36 @@ Created AboutView.vue with team/contact sections, added /about route with lazy l
 ### Next Steps
 
 - None - task complete
+
+
+## Session 3: 全站中文化
+
+**Date**: 2026-05-07
+**Task**: 全站中文化
+**Branch**: `master`
+
+### Summary
+
+将整个网站从英文改为中文：index.html lang=zh-CN、导航栏、首页、关于我们页（含中文团队名和北京地址）、登录/注册页
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `dcdf58b` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
