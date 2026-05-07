@@ -75,12 +75,6 @@ const features = [
 </template>
 
 <style scoped>
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
 /* Hero Section */
 .hero {
   padding: 8rem 0;
@@ -111,48 +105,10 @@ const features = [
   justify-content: center;
 }
 
-.btn {
-  padding: 0.8rem 2rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: var(--transition);
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: var(--primary-color);
-  color: white;
-  border: 2px solid var(--primary-color);
-}
-
-.btn-primary:hover {
-  background-color: #3aa673;
-  border-color: #3aa673;
-  transform: translateY(-2px);
-}
-
-.btn-secondary {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-}
-
-.btn-secondary:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
-}
-
 /* Features Section */
 .features {
   padding: 6rem 0;
   background-color: var(--gray-light);
-}
-
-.section-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 4rem;
-  color: var(--secondary-color);
 }
 
 .features-grid {
