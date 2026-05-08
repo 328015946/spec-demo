@@ -135,3 +135,36 @@ Created AboutView.vue with team/contact sections, added /about route with lazy l
 ### Next Steps
 
 - None - task complete
+
+
+## Session 5: 添加 .gemini 配置
+
+**Date**: 2026-05-08
+**Task**: 添加 .gemini 配置
+**Branch**: `main`
+
+### Summary
+
+为 Gemini CLI 添加了 Trellis 配置，包括子代理、技能和钩子脚本。适配了 inject-subagent-context.py 以支持 Gemini 的 invoke_agent 工具。创建了 .gemini/hooks.json 以启用自动化工作流。
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `chore(task): archive 05-08-add-gemini-config` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
