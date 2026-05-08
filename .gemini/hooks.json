@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "hooks": {
+    "PreToolUse": [
+      {
+        "command": "python .gemini/hooks/inject-subagent-context.py",
+        "matcher": "Task|Subagent",
+        "timeout": 30
+      }
+    ],
+    "SessionStart": [
+      {
+        "command": "python .gemini/hooks/session-start.py",
+        "timeout": 10
+      }
+    ],
+    "BeforeAgent": [
+      {
+        "command": "python .gemini/hooks/inject-workflow-state.py",
+        "timeout": 5
+      }
+    ]
+  }
+}
