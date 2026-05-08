@@ -8,8 +8,8 @@
 
 <!-- @@@auto:current-status -->
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 3
-- **Last Active**: 2026-05-07
+- **Total Sessions**: 4
+- **Last Active**: 2026-05-08
 <!-- @@@/auto:current-status -->
 
 ---
@@ -19,7 +19,7 @@
 <!-- @@@auto:active-documents -->
 | File | Lines | Status |
 |------|-------|--------|
-| `journal-1.md` | ~104 | Active |
+| `journal-1.md` | ~137 | Active |
 <!-- @@@/auto:active-documents -->
 
 ---
@@ -29,6 +29,7 @@
 <!-- @@@auto:session-history -->
 | # | Date | Title | Commits | Branch |
 |---|------|-------|---------|--------|
+| 4 | 2026-05-08 | 添加人员介绍页面 | `ae3027a` | `main` |
 | 3 | 2026-05-07 | 全站中文化 | `dcdf58b` | `master` |
 | 2 | 2026-05-07 | Add About Us page | `ff5531a` | `master` |
 | 1 | 2026-05-07 | Project Initialization and Workflow Review | - | `master` |

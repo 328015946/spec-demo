@@ -102,3 +102,36 @@ Created AboutView.vue with team/contact sections, added /about route with lazy l
 ### Next Steps
 
 - None - task complete
+
+
+## Session 4: 添加人员介绍页面
+
+**Date**: 2026-05-08
+**Task**: 添加人员介绍页面
+**Branch**: `main`
+
+### Summary
+
+创建了 PersonnelView.vue 并在 App.vue 和 router 中集成，完成了人员介绍页面的开发。并通过 npm run build 验证了构建。
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `ae3027a` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
