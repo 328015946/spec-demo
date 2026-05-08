@@ -16,6 +16,7 @@
       <router-link to="/" class="logo">VueApp</router-link>
       <nav class="nav-links">
         <router-link to="/" class="nav-item">首页</router-link>
+        <router-link to="/personnel" class="nav-item">人员介绍</router-link>
         <router-link to="/about" class="nav-item">关于我们</router-link>
         <router-link to="/login" class="nav-item">登录</router-link>
         <router-link to="/register" class="btn btn-primary btn-sm">注册</router-link>
