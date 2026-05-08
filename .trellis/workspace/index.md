@@ -1,125 +1,116 @@
-# Workspace Index
+# 工作区总索引
 
-> Records of all AI Agent work records across all developers
+> 汇总本项目所有开发者的 AI 会话记录与维护说明。
 
 ---
 
-## Overview
+## 概览
 
-This directory tracks records for all developers working with AI Agents on this project.
+本目录用于统一管理 Trellis 工作区记录：
 
-### File Structure
+- 每位开发者有独立目录：`.trellis/workspace/{developer}/`
+- 每位开发者目录下维护：
+  - `index.md`（个人索引，通常由 `add_session.py` 自动更新）
+  - `journal-N.md`（会话日志，按序号递增）
 
-```
+---
+
+## 目录结构
+
+```text
 workspace/
-|-- index.md              # This file - main index
-+-- {developer}/          # Per-developer directory
-    |-- index.md          # Personal index with session history
-    |-- tasks/         # Task files
-    |   |-- *.json        # Active tasks
-    |   +-- archive/      # Archived tasks by month
-    +-- journal-N.md     # Journal files (sequential: 1, 2, 3...)
+├─ index.md                     # 本文件：全局总索引（人工维护）
+└─ {developer}/                 # 开发者个人目录
+   ├─ index.md                  # 个人索引（自动更新）
+   └─ journal-N.md              # 会话日志（N=1,2,3...）
 ```
 
 ---
 
-## Active Developers
+## 当前开发者状态
 
-| Developer | Last Active | Sessions | Active File |
-|-----------|-------------|----------|-------------|
-| (none yet) | - | - | - |
+| 开发者 | 最近活跃   | 会话数 | 当前日志文件   | 个人索引                           |
+| ------ | ---------- | -----: | -------------- | ---------------------------------- |
+| `xiao` | 2026-05-08 |      6 | `journal-1.md` | `.trellis/workspace/xiao/index.md` |
+
+> 说明：本表来自当前仓库中的实际记录，请在新增开发者或会话变化后手动同步。
 
 ---
 
-## Getting Started
+## 使用说明
 
-### For New Developers
-
-Run the initialization script:
+### 新开发者初始化
 
 ```bash
-python ./.trellis/scripts/init_developer.py <your-name>
+python ./.trellis/scripts/init_developer.py <developer-name>
 ```
 
-This will:
-1. Create your identity file (gitignored)
-2. Create your progress directory
-3. Create your personal index
-4. Create initial journal file
+初始化后会创建：
 
-### For Returning Developers
+1. `.trellis/.developer`（开发者身份文件，gitignore）
+2. `.trellis/workspace/<developer>/`
+3. `.trellis/workspace/<developer>/index.md`
+4. `.trellis/workspace/<developer>/journal-1.md`
 
-1. Get your developer name:
-   ```bash
-   python ./.trellis/scripts/get_developer.py
-   ```
+### 记录一次会话（推荐）
 
-2. Read your personal index:
-   ```bash
-   cat .trellis/workspace/$(python ./.trellis/scripts/get_developer.py)/index.md
-   ```
+```bash
+python ./.trellis/scripts/add_session.py --title "<会话标题>" --summary "<摘要>"
+```
+
+该命令会自动更新 **个人索引**（`workspace/<developer>/index.md`）并追加 `journal`。
 
 ---
 
-## Guidelines
+## 维护约定（重要）
 
-### Journal File Rules
-
-- **Max 2000 lines** per journal file
-- When limit is reached, create `journal-{N+1}.md`
-- Update your personal `index.md` when creating new files
-
-### Session Record Format
-
-Each session should include:
-- Summary: One-line description
-- Branch: Which branch the work was done on
-- Main Changes: What was modified
-- Git Commits: Commit hashes and messages
-- Next Steps: What to do next
+- `workspace/<developer>/index.md`：由 `add_session.py` 自动维护。
+- `workspace/index.md`（本文件）：**不会自动维护**，需要人工更新。
+- 建议在以下时机更新本文件：
+  - 新增开发者
+  - 开发者会话数明显变化（例如阶段收尾）
+  - 需要对外展示团队活动总览
 
 ---
 
-## Session Template
-
-Use this template when recording sessions:
+## 会话记录建议模板（中文）
 
 ```markdown
-## Session {N}: {Title}
+## Session {N}: {标题}
 
-**Date**: YYYY-MM-DD
-**Task**: {task-name}
-**Branch**: `{branch-name}`
+**Date**: YYYY-MM-DD **Task**: {任务名} **Branch**: `{分支名}`
 
 ### Summary
 
-{One-line summary}
+{一句话总结}
 
 ### Main Changes
 
-- {Change 1}
-- {Change 2}
+- {改动 1}
+- {改动 2}
 
 ### Git Commits
 
-| Hash | Message |
-|------|---------|
-| `abc1234` | {commit message} |
+| Hash      | Message    |
+| --------- | ---------- |
+| `abc1234` | {提交信息} |
 
 ### Testing
 
-- [OK] {Test result}
+- [OK] {测试结果}
 
 ### Status
 
-[OK] **Completed** / # **In Progress** / [P] **Blocked**
+[OK] **Completed** / [~] **In Progress** / [P] **Blocked**
 
 ### Next Steps
 
-- {Next step 1}
-- {Next step 2}
+- {下一步 1}
 ```
 
 ---
 
-**Language**: All documentation must be written in **English**.
+## 备注
+
+- 当前全局索引已从默认模板切换为中文版本。
+- 若后续希望“自动化更新本文件”，可新增脚本扫描 `workspace/*/index.md` 后回写此文件。
