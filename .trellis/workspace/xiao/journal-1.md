@@ -168,3 +168,37 @@ Created AboutView.vue with team/contact sections, added /about route with lazy l
 ### Next Steps
 
 - None - task complete
+
+
+## Session 6: 人员介绍页面与 .gemini 配置集成
+
+**Date**: 2026-05-08
+**Task**: 人员介绍页面与 .gemini 配置集成
+**Branch**: `main`
+
+### Summary
+
+完成了人员介绍页面的开发，并补办了相关任务记录。同时，为 Gemini CLI 添加了完整的 Trellis 集成配置（.gemini），包括子代理、技能和钩子适配。目前项目已具备在 Gemini 下自动注入上下文和工作流引导的能力。
+
+### Main Changes
+
+(Add details)
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `ae3027a` | (see git log) |
+| `0140b07` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete

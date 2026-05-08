@@ -8,7 +8,7 @@
 
 <!-- @@@auto:current-status -->
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 5
+- **Total Sessions**: 6
 - **Last Active**: 2026-05-08
 <!-- @@@/auto:current-status -->
 
@@ -19,7 +19,7 @@
 <!-- @@@auto:active-documents -->
 | File | Lines | Status |
 |------|-------|--------|
-| `journal-1.md` | ~170 | Active |
+| `journal-1.md` | ~204 | Active |
 <!-- @@@/auto:active-documents -->
 
 ---
@@ -29,6 +29,7 @@
 <!-- @@@auto:session-history -->
 | # | Date | Title | Commits | Branch |
 |---|------|-------|---------|--------|
+| 6 | 2026-05-08 | 人员介绍页面与 .gemini 配置集成 | `ae3027a`, `0140b07` | `main` |
 | 5 | 2026-05-08 | 添加 .gemini 配置 | chore(task): archive 05-08-add-gemini-config | `main` |
 | 4 | 2026-05-08 | 添加人员介绍页面 | `ae3027a` | `main` |
 | 3 | 2026-05-07 | 全站中文化 | `dcdf58b` | `master` |
