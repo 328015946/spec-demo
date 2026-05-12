@@ -1,3 +1,8 @@
+---
+description: 
+alwaysApply: true
+---
+
 <!-- TRELLIS:START -->
 # Trellis Instructions
 

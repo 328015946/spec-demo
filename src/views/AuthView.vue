@@ -45,23 +45,23 @@
 
       <form @submit.prevent="handleSubmit" class="auth-form">
         <div v-if="!isLogin" class="form-group">
-          <label>姓名</label>
-          <input v-model="formData.name" type="text" placeholder="请输入姓名" required />
+          <label for="name">姓名</label>
+          <input id="name" v-model="formData.name" type="text" placeholder="请输入姓名" autocomplete="name" required />
         </div>
 
         <div class="form-group">
-          <label>邮箱地址</label>
-          <input v-model="formData.email" type="email" placeholder="name@example.com" required />
+          <label for="email">邮箱地址</label>
+          <input id="email" v-model="formData.email" type="email" placeholder="name@example.com" autocomplete="email" required />
         </div>
 
         <div class="form-group">
-          <label>密码</label>
-          <input v-model="formData.password" type="password" placeholder="••••••••" required />
+          <label for="password">密码</label>
+          <input id="password" v-model="formData.password" type="password" placeholder="••••••••" autocomplete="current-password" required />
         </div>
 
         <div v-if="!isLogin" class="form-group">
-          <label>确认密码</label>
-          <input v-model="formData.confirmPassword" type="password" placeholder="••••••••" required />
+          <label for="confirm-password">确认密码</label>
+          <input id="confirm-password" v-model="formData.confirmPassword" type="password" placeholder="••••••••" autocomplete="new-password" required />
         </div>
 
         <button type="submit" class="btn btn-primary btn-block">

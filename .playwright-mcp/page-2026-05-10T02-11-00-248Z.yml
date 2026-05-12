@@ -1,0 +1,59 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "VueApp" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - link "首页" [ref=e7] [cursor=pointer]:
+          - /url: /
+        - link "公司介绍" [ref=e8] [cursor=pointer]:
+          - /url: /company
+        - link "公司环境" [ref=e9] [cursor=pointer]:
+          - /url: /environment
+        - link "招聘信息" [ref=e10] [cursor=pointer]:
+          - /url: /recruitment
+        - link "人员介绍" [ref=e11] [cursor=pointer]:
+          - /url: /personnel
+        - link "关于我们" [ref=e12] [cursor=pointer]:
+          - /url: /about
+        - link "登录" [ref=e13] [cursor=pointer]:
+          - /url: /login
+        - link "注册" [ref=e14] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - heading "欢迎使用 Vue 项目" [level=1] [ref=e19]
+        - paragraph [ref=e20]: 用于构建现代 Web 界面的渐进式框架。
+        - generic [ref=e21]:
+          - link "立即开始" [ref=e22] [cursor=pointer]:
+            - /url: /register
+          - link "了解更多" [ref=e23] [cursor=pointer]:
+            - /url: /login
+      - generic [ref=e25]:
+        - heading "核心特性" [level=2] [ref=e26]
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]: ⚡
+            - heading "Vue 3 + Vite" [level=3] [ref=e30]
+            - paragraph [ref=e31]: 采用最新的 Vue 3 组合式 API 和极速 Vite 构建工具，提供卓越的开发体验。
+          - generic [ref=e32]:
+            - generic [ref=e33]: 🎨
+            - heading "现代设计" [level=3] [ref=e34]
+            - paragraph [ref=e35]: 简洁、响应式的界面设计，为用户提供最佳的使用体验。
+          - generic [ref=e36]:
+            - generic [ref=e37]: 🚀
+            - heading "高可扩展性" [level=3] [ref=e38]
+            - paragraph [ref=e39]: 采用清晰的架构设计，能够随着项目需求的变化而灵活扩展。
+      - generic [ref=e42]:
+        - heading "为什么选择我们？" [level=2] [ref=e43]
+        - paragraph [ref=e44]: 本项目是您下一个伟大创意的起点。我们为您搭建好了所有必要的基础设施， 遵循行业最佳实践，为高性能和可维护性提供了坚实的基础。
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: © 2024 Vue 首页. 保留所有权利。
+        - generic [ref=e48]:
+          - link "隐私政策" [ref=e49] [cursor=pointer]:
+            - /url: "#"
+          - link "服务条款" [ref=e50] [cursor=pointer]:
+            - /url: "#"
+          - link "联系我们" [ref=e51] [cursor=pointer]:
+            - /url: "#"

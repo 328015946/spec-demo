@@ -76,22 +76,23 @@
 <style scoped>
   /* Hero 区域 */
   .hero {
-    padding: 8rem 0;
+    padding: 7rem 0 6.5rem;
     background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
     color: white;
     text-align: center;
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: clamp(2.1rem, 5vw, 3.4rem);
     font-weight: 800;
-    margin-bottom: 1.5rem;
-    letter-spacing: -1px;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.5px;
+    line-height: 1.12;
   }
 
   .hero-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2.5rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    margin-bottom: 2rem;
     opacity: 0.9;
     max-width: 600px;
     margin-left: auto;
@@ -106,28 +107,29 @@
 
   /* 功能特性区域 */
   .features {
-    padding: 6rem 0;
+    padding: 5rem 0;
     background-color: var(--gray-light);
   }
 
   .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    gap: 1.5rem;
   }
 
   .feature-card {
     background: white;
-    padding: 2.5rem;
-    border-radius: 12px;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow);
     transition: var(--transition);
     text-align: center;
+    border: 1px solid var(--border-color);
   }
 
   .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-hover);
   }
 
   .feature-icon {
@@ -147,7 +149,7 @@
 
   /* 关于我们区域 */
   .about {
-    padding: 6rem 0;
+    padding: 5rem 0;
     text-align: center;
   }
 
@@ -157,13 +159,13 @@
   }
 
   .about p {
-    font-size: 1.15rem;
-    color: var(--gray-dark);
+    font-size: 1.08rem;
+    color: var(--text-color-muted);
   }
 
   /* 页脚 */
   .footer {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
@@ -188,13 +190,14 @@
 
   /* 响应式 */
   @media (max-width: 768px) {
-    .hero-title {
-      font-size: 2.5rem;
-    }
-
     .cta-buttons {
       flex-direction: column;
-      padding: 0 2rem;
+      align-items: stretch;
+      padding: 0 1rem;
+    }
+
+    .features-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>
